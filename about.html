@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <title>Tea House Iasi</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +17,7 @@
 <body>
     <section class="sub-header">
         <nav>
-           <a href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html"><img src="images/logo.png" alt="Tea House Iasi Logo"></a>
            <div class="nav-links" id="navLinks">
             <i class="fa fa-times"  onclick="hideMenu()"></i>
                 <ul>
@@ -34,22 +36,35 @@
       <h1>About Us</h1>
 
     </section>
-<!------about us content ------>
+
 
 <section class="about-us">
+    <h1 style="text-align:center;">We are the world's biggest Tea House</h1>
+    <h1 style="text-align:center;">Meet the team</h1>
+
     <div class="row">
         <div class="about-col">
-            <h1> We are the world's biggest Tea House</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut .</p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            <img src="images/avatar.png" alt="avatar">
+            <h1  style="text-align:center;"><small>Carp Răzvan Nicolae</small></h1>
+            <p>descriere</p>
+        </div>
+
+        <div class="about-col">
+            <img src="images/avatar.png" alt="avatar">
+
+            <h1  style="text-align:center;"><small>Gorgos Răzvan-Andrei</small></h1>
+            <p>I am a second-year student at the Alexandru Ioan Cuza University in Iasi and I chose to study computer science
+                because I have been passionate about this field since high school. I am a social and creative person who likes
+                to find innovative solutions to every problem. I am always looking to learn new things, meet new people and
+                acquire new skills that will be useful for me in the future.</p>
         </div>
         <div class="about-col">
-            <img src="images/about.jpg">
+            <img src="images/avatar.png" alt="avatar">
+            <h1  style="text-align:center;"><small>Bărbulescu Robert Cristian</small></h1>
+            <p>descriere</p>
         </div>
+      
+      
     
     </div>
 
@@ -58,20 +73,24 @@
 
 
 <section class="footer">
-    <h4>About Us</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut .</p>
+    <h4>Program:</h4>
+    <p>Monday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Tuesday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Wednesday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Thursday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Friday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Saturday: <span style="font-style: italic;">10:00-22:00</span></p>
+<p>Sunday: <span style="font-style: italic;">Closed</span></p>
+
     <div class="icons">
         <i class="fa fa-facebook" ></i>
         <i class="fa fa-twitter" ></i>
         <i class="fa fa-instagram" ></i>
-        <i class="fa fa-linkedin" ></i>
     </div>   
 
 </section>
 
- <!------JavaScript for Toggle Menu ------>   
+
 <script>
      var navLinks = document.getElementById("navLinks");
      function showMenu(){
