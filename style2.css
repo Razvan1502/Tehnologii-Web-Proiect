@@ -103,3 +103,8 @@ input:focus{
    text-decoration: none;
    color: #464647;
 }
+
+ p {
+   margin-top: -1em;
+
+}
