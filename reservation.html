@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <title>Tea House Iasi</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reservation.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
 <body>
     <section class="sub-header">
         <nav>
-           <a href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html"><img src="images/logo.png" alt="Tea House Iasi Logo"></a>
            <div class="nav-links" id="navLinks">
             <i class="fa fa-times"  onclick="hideMenu()"></i>
                 <ul>
@@ -31,18 +32,19 @@
            <i id="menu" class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-      <h1>Contact Us</h1>
+      <h1>Reservation</h1>
 
     </section>
 
-<!------reservation content ------>
+
 
 <section><h3>Complete and send this form to book your reservation.</h3></section>
 
-<section class="contact-us">
+<div class="reservation">
+    
     <div class="row">
         <div class="contact-col">
-            <form action="">
+            <form action="#">
                 <label for="name">Enter Your Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
                 <label for="email">Enter Your Email:</label>
@@ -51,7 +53,7 @@
                 <select id="table" name="table" required>
                 <option value="">--Select your table number--</option>
                 <script>
-                    for (var i = 1; i <= 10; i++) {
+                    for (var i = 1; i <= 8; i++) {
                     document.write('<option value="' + i + '">' + i + '</option>');
     }
   </script>
@@ -62,22 +64,29 @@
             </form>
         </div>     
     </div>
-</section>
+</div>
+<section><h3>View the scheme and choose the right table.</h3></section>
+
+<img src="images/table.png" alt="table" class="bordered">
+
+
 
 <section class="footer">
-    <h4>About Us</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut .</p>
+    <h4>Program:</h4>
+    <p>Monday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Tuesday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Wednesday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Thursday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Friday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Saturday: <span style="font-style: italic;">10:00-22:00</span></p>
+<p>Sunday: <span style="font-style: italic;">Closed</span></p>
     <div class="icons">
         <i class="fa fa-facebook" ></i>
         <i class="fa fa-twitter" ></i>
         <i class="fa fa-instagram" ></i>
-        <i class="fa fa-linkedin" ></i>
     </div>   
 </section>
 
- <!------JavaScript for Toggle Menu ------>   
 <script>
      var navLinks = document.getElementById("navLinks");
      function showMenu(){
