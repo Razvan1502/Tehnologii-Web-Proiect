@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <title>Tea House Iasi</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style2.css">
@@ -17,8 +18,8 @@
     <body>
         <section class="sub-header">
             <nav>
-               <a href="index.html"><img src="images/logo.png"></a>
-               <div class="nav-links" id="navLinks">
+                <a href="index.html"><img src="images/logo.png" alt="Tea House Iasi Logo"></a>
+                <div class="nav-links" id="navLinks">
                 <i class="fa fa-times"  onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -33,25 +34,79 @@
                <i id="menu" class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
     
-            <h1>Sign up</h1>
+            <h1>Shopping Cart</h1>
         </section>
-   <div class="wrapper">
-    <form action="#">
-        <input type="text" placeholder="Email" required>
-        <input type="text" placeholder="Name" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder=" Re-enter Password" required>
-        <button>Sign up</button>
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/blackTea.png" alt="blacktea">
+                    <div>
+                        <p>Black Tea</p>
+                        <small>Price: 9.99$</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>9.99$</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/berryTea.png" alt="berryTea">
+                    <div>
+                        <p>Berry Tea</p>
+                        <small>Price: 12$</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>12$</td>
+        </tr>
 
-    </form>
-    <div class="terms">
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">I agree to these <a href='#'>Terms & Conditions</a></label>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/lindenTea.png" alt="lindenTea">
+                    <div>
+                        <p>Linden Tea</p>
+                        <small>Price: 7.99$</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>7.99$</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>29.98$</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>2$</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>31.98$</td>
+            </tr>
+        </table>
     </div>
-    <div class="member">
-        Already a member? <a href="./login.html">Login here</a> 
-    </div>
-   </div>
+</div>
    <section class="footer">
     <h4>Program:</h4>
     <p>Monday: <span style="font-style: italic;">08:30-22:00</span></p>
@@ -67,8 +122,6 @@
         <i class="fa fa-instagram" ></i>
     </div>   
 </section>
-
- <!------JavaScript for Toggle Menu ------>   
 <script>
      var navLinks = document.getElementById("navLinks");
      function showMenu(){
