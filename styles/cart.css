@@ -240,10 +240,13 @@ button{
     width: 90%;
     color: #fff;
     cursor: pointer;
-    background: rgb(17, 107,143);
+    background: #f44336;
  }
 
  
  button:hover{
-    background: rgb(17, 107,143);
+    background: #f44336;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
  }
