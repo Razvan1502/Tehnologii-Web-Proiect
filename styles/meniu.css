@@ -244,6 +244,26 @@ h4{
     opacity: 1;
 }
 
+.layer a{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: transparent;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover a{
+    bottom: 49%;
+    background-color: transparent;
+    opacity: 1;
+    margin: -125px 0;
+}
 
 @media(max-width: 700px){
     .produse-col img{
