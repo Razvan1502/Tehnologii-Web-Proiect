@@ -169,6 +169,8 @@ h3{
     padding: 18px 0;
 }
 
+
+
 .sub-header{
     height: 50vh;
     width: 100%;
@@ -197,29 +199,13 @@ h3{
     color:#fff;
 }
 
-
-
-
-
-
-
-
-
-    
 .contact-col{
     flex-basis: 48%;
     margin-bottom: 30px;
+    max-width: 60%;
 }
     
 
-
-
-.contact-col div h5{
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: darkblue;
-    font-weight: 500;
-}
 
 .contact-col input, .contact-col textarea{
     width: 100%;
@@ -236,14 +222,14 @@ h3{
 }
 
 .bordered {
-    border-radius: 10px;
-    margin: auto;
-    display: block;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 90%;
     height: auto;
-    width: 80%;
     transition: all 0.2s ease-in-out;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
   }
@@ -253,11 +239,9 @@ h3{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   }
     
-  @media only screen and (max-width: 700px) {
+  @media only screen and (min-width: 600px) {
     .bordered {
       text-align: center;
-      width : 90%;
-
     }
   }
   
