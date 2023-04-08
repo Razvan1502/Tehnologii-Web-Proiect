@@ -62,6 +62,7 @@
     font-size: 13px;
     background:  transparent;
     cursor: pointer;
+    margin-top: 1rem;
 
 }
 .hero-btn:hover{
@@ -256,7 +257,7 @@ h3{
     
   @media only screen and (min-width: 600px) {
     .bordered {
-      margin-left: 8.5rem;
+      text-align: center;
     }
   }
   
