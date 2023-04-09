@@ -221,6 +221,10 @@ h3{
   align-items: center;
 }
 
+form{
+    margin-left: 100px;
+}
+
 .bordered {
     border: 1px solid black;
     display: flex;
