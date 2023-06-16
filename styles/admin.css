@@ -1,0 +1,45 @@
+
+/* Admin Panel */
+.admin-panel {
+    margin: 2rem;
+}
+
+.admin-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-panel table th,
+.admin-panel table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.admin-panel table th {
+    background-color: #f9f9f9;
+    text-align: left;
+    font-weight: 600;
+}
+
+.admin-panel table td form {
+    display: flex;
+    align-items: center;
+}
+
+.admin-panel table td input[type="number"] {
+    width: 60px;
+    padding: 0.5rem;
+}
+
+.admin-panel table td button {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-panel table td button:hover {
+    background-color: #45a049;
+}
