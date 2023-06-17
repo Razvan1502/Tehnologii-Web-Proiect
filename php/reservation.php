@@ -143,13 +143,18 @@ require 'sessions.php';
             var dateInput = document.getElementById("date");
             var timeSelect = document.getElementById("time");
             var selectedDate = new Date(dateInput.value);
-            timeSelect.innerHTML = ""; 
+            var currentDate = new Date()
+            var currentHour = currentDate.getHours();
 
-            if (selectedDate && !isNaN(selectedDate.getTime())) {
-                var startHour = 8; 
-                var endHour = 22; 
+            timeSelect.innerHTML = "";
 
-            
+            if (selectedDate && !isNaN(selectedDate.getTime()) && (selectedDate > currentDate || selectedDate.toDateString() === currentDate.toDateString())) {
+                var startHour = selectedDate.toDateString() === currentDate.toDateString() ? currentHour : 8; 
+                var endHour = 22;
+
+                if(startHour % 2 == 1)
+                    startHour++;
+
                 for (var i = startHour; i <= endHour - 2; i += 2) {
                     var timeOption = document.createElement("option");
                     var formattedTime = formatTime(i) + " - " + formatTime(i + 2);
@@ -160,10 +165,14 @@ require 'sessions.php';
             } else {
                 var defaultOption = document.createElement("option");
                 defaultOption.value = "";
-                defaultOption.textContent = "--Select a date first--";
+                defaultOption.textContent = "--Select a valid date--";
                 timeSelect.appendChild(defaultOption);
             }
         }
+
+
+
+
 
         function formatTime(hour) {
             return (hour < 10 ? "0" + hour : hour) + ":00";
