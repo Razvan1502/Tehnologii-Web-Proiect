@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Tea House Iasi</title>
+        <link rel="stylesheet" href="styles/reservation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Tea House Iasi Logo"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"  onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li class="fa fa-shopping-cart"><a href="cart.html"> CART</a></li>
+                </ul>
+           </div>
+           <i id="menu" class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+      <h1>Reservation</h1>
+
+    </section>
+
+
+
+<section><h3>Complete and send this form to book your reservation.</h3></section>
+
+<div class="reservation">
+    
+    <div class="row">
+        <div class="contact-col">
+            <form action="#">
+                <label for="name">Enter Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <label for="email">Enter Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <label for="date">Enter The Date:</label>
+                <input type="date" id="date" name="date"  required>
+                <label for="time">Enter The Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="table">Select your table number:</label>
+                <select id="table" name="table" required>
+                <option value="">--Select your table number--</option>
+                <script>
+                    for (var i = 1; i <= 8; i++) {
+                    document.write('<option value="' + i + '">' + i + '</option>');
+                    }
+                </script>
+</select>
+<p></p>
+<button type="submit" class="hero-btn red-btn">Reserve</button>
+
+            </form>
+        </div>     
+    </div>
+</div>
+<section><h3>View the scheme and choose the right table.</h3></section>
+
+<img src="images/tables.png" alt="table" class="bordered">
+
+
+
+<section class="footer">
+    <h4>Program:</h4>
+    <p>Monday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Tuesday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Wednesday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Thursday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Friday: <span style="font-style: italic;">08:30-22:00</span></p>
+<p>Saturday: <span style="font-style: italic;">10:00-22:00</span></p>
+<p>Sunday: <span style="font-style: italic;">Closed</span></p>
+
+    <p> To be up to date with the latest information, follow us on</p>
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+    </div>   
+</section>
+
+<script>
+     var navLinks = document.getElementById("navLinks");
+     function showMenu(){
+        navLinks.style.right = "0";
+     }
+     function hideMenu(){
+        navLinks.style.right = "-200px";
+     }
+
+</script>
+
+
+</body>     
+</html>

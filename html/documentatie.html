@@ -1,0 +1,123 @@
+<!doctype html>  
+<html lang="ro">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    
+    <title>Documentatie</title>
+
+    <link rel="stylesheet" href="styles/documentatie.css">
+
+
+  </head>
+  <body>
+
+    <section class="contents">
+
+        
+        <h1>Tea House</h1>
+        
+        <div class="continut">
+        <h2>Cerintă</h2>
+        <p>Sa se implementeze o aplicatie Web care – via un API Web REST – simuleaza o ceainarie destinata in special studentilor informaticieni. Interactiunea cu "clientii" se va 
+            realiza din pagini Web publice gazduite pe un anumit server Web, pe baza campului 'Referer' din antetul unui mesaj HTTP. Aplicatia trebuie sa puna la dispozitia "clientilor" 
+            o serie de resurse identificate via URI precum '/intrare', '/meniu', '/preferinta/ceai/’ ‘/preferinta/ceai?de=tei’, '/vreau/suc', '/comanda/ceai/?fara=zahar', 
+            '/comanda/zacusca', '/nota', '/iesire' etc. (dati frau liber imaginatiei). Desi identificarea clientului se va realiza pe baza contului din URL-ul oferit de Referer, trebuie 
+            mentinut un nivel minimal contabil si informativ: ce produse sunt in stoc si la ce pret, cine si ce a comandat, care e valoarea totala a notei de plata, la ce ora s-a inregistrat 
+            o comanda, cine mai era atunci in ceainarie etc. Resursele sunt disponibile in cantitati finite, eventual ajustabile dinamic. "Filmul" ocuparii localului va putea fi expus, in mod
+            dinamic, ca formate precum HTML, JSON si ca flux de stiri Atom. De asemenea, “proprietarul” ceainariei trebuie sa raspunda clientilor in mod "politicos” din punct de vedere HTTP 
+            -- exemplu: daca se recurge la 'GET /comanda/alcool', se va intoarce codul 403 Forbidden. A se lua in consideratie si alte exceptii.</p>
+        </div>
+
+        <div class="continut"> 
+        <h2>Abstract</h2>
+        <p>Tea House este un site web care oferă o experiență de savurare a ceaiului. Paginile includ Meniu, Rezervare, Login, Despre, Ajutor, Contact și Cos de cumpărături. 
+            Utilizatorii pot explora o gamă diversă de ceaiuri, pot face programări la locația noastră și comanda produse , isi pot face un cont de utilizator si de asemenea ne pot trimite diverse sugestii si pareri 
+            pe pagina noastra de contact.</p>
+        </div>
+        
+        <div class="continut"> 
+          <h2>Introducere</h2>
+          <p> Web Tea House este o aplicatie web realizata pentru a oferi utilizatorilor experiențe deosebite de savurare a ceaiului, cu o gamă largă de produse de calitate superioară 
+            și servicii personalizate. Site-ul are o interfață plăcută și ușor de utilizat, oferind utilizatorilor posibilitatea de a explora diferite categorii de ceaiuri și de a căuta
+             produse după preferințe . De asemenea, Web Tea House oferă utilizatorilor posibilitatea de a face o programare la locația noastră și de a comanda produse. 
+             Paginile de informații, cum ar fi Despre, Ajutor și Contact, furnizează utilizatorilor informații utile și de contact.
+               În ansamblu, Web Tea House este un site web atractiv și funcțional, care oferă o experiență deosebită de savurare a ceaiului. </p>
+         </div>  
+         
+
+       
+
+        <div class="continut">
+          <h2>Structură</h2>
+          <h3> Site-ul este organizat în jurul a 8 pagini importante: Home, Menu, Reservation, Login, About, Help, Contact și Cart.</h3>
+            <h3>Header</h3>
+            <p>Header contine logo-ul site-ului, ce functioneaza si ca buton de intoarcere la pagina principala si  un meniu  de navigare principal prin restul paginilor . 
+                Doar index.html foloseste header iar restul paginilor vor folosi sub-header-ul.</p> 
+            <h3>Sub-header</h3>
+            <p>Sub-header contine logo-ul site-ului, ce functioneaza si ca buton de intoarcere la pagina principala si  un meniu  de navigare principal prin restul paginilor . 
+                Majoriatea  paginilor  folosesc sub-header-ul in afara de index.html.</p>     
+            <h3>Footer</h3>
+            <p>Footer contine programul de lucru al localului si referinte catre platformele sociale unde ne puteti gasi pentru mai multe informatii </p> 
+           
+           <h3>Home</h3>
+            <p> Home este pagina principală a site-ului Tea House, oferind acces la toate celelalte pagini ale site-ului . De asemenea pe home page utilizatorul poate vedea cele mai populare produse
+                 , locatia  , cateva review-uri lasate de clientii nostri si are optiunea de a fi redirectionat catre pagina de rezervari</p> 
+           <h3>Menu</h3>
+           
+            <p>  Meniul  prezintă gama largă de ceaiuri , oferindu-i utilizatorului optiunea de a vizualiza pretul produsul si optiunea de a il adauga in cos apasand pe iconita respectiva .</p> 
+            <h3>Reservation</h3>
+            <p>  Pagina Rezervare oferă clienților posibilitatea de a face o programare la  Tea House. Utilizatorii pot alege data, ora și numărul mesei pentru a savura o selecție de ceaiuri în locația noastră confortabilă și relaxantă. Totodată, utilizatorul poate vedea o Harta a localului pentru a vedea unde este pozitionata fiecare masa si capacitatea fiecarei mese.</p> 
+            <h3>Contact</h3>
+            <p>  Pagina de contact de pe site-ul Web Tea House este locul unde utilizatorii pot găsi informații de contact pentru a intra în legătură cu echipa noastră sau pentru a ne trimite un mesaj. Pagina include o formă de contact online, unde utilizatorii pot completa detaliile lor de contact și mesajul pe care doresc să-l transmită. Această formă de contact este utilă pentru utilizatorii care doresc să ne trimită sugestii, întrebări, comentarii sau orice altceva legat de experiența lor pe site-ul nostru sau în locația noastră fizică.
+            În plus, pe pagina de contact se regăsesc și alte informații utile, cum ar fi adresa noastră fizică si numărul de telefon . Aceste informații de contact sunt utile pentru utilizatorii care doresc să ne contacteze prin alte metode decât formularul online.</p> 
+            <h3>About</h3>
+            <p>  Pagina About de pe site-ul Tea House este locul unde utilizatorii pot vizualiza o scurta descriere a localului și a  proprietarilor noștri. Pe această pagină, prezentăm o descriere detaliată a experienței de savurare a ceaiului pe care o oferim și a valorilor noastre ca afacere.</p> 
+            <h3> Help</h3>
+            <p>  Pagina de Help de pe site-ul Web Tea House este locul unde utilizatorii pot găsi informații utile despre cum să navigheze pe site-ul nostru și să utilizeze funcțiile acestuia în mod eficient.  </p> 
+            <h3>Login</h3>
+            <p>Paginile dedicate procesului de login/register: aceste pagini vor contine un formular prin care un utilizator va putea crea un cont nou sau se va putea autentifica daca acesta are deja un cont. De asemenea utilizatorul are optiunea de a-si schimba parola.</p> 
+            <h3>Cart</h3>
+            <p> În cele din urmă, pagina Cart ( coș de cumparaturi ) permite utilizatorilor să adauge și să gestioneze produsele dorite, precum și să finalizeze comanda</p> 
+          
+
+        </div>
+        
+        <div class="continut">
+            <h2>Tehnologii utilizate</h2>
+            <p>Tea House, utilizează HTML și CSS pentru a crea aspectul și funcționalitatea paginilor web. <br>HTML (HyperText Markup Language) este un limbaj de marcare utilizat pentru     structurarea și organizarea conținutului web. Aceasta include etichete și atribute care permit crearea de elemente precum texte, imagini, link-uri și formulare.
+              <br>CSS (Cascading Style Sheets) este un limbaj de stilizare utilizat pentru a da paginilor web un aspect atractiv și ușor de navigat. CSS permite modificarea proprietăților de afișare a elementelor HTML, cum ar fi culorile de fundal, dimensiunile fonturilor, marginile și poziționarea.
+              <br> Am folosit si putin Java Script pentru a modifica meniul atunci cand utilzatorul va intra de pe telefon.
+            </p>
+          </div>
+
+        <div class="continut">
+            <h2>Autori</h2>
+            <ul>
+            <li>Carp Răzvan Nicolae</li>
+                <li>Gorgos Răzvan Andrei</li>
+                    <li>Bărbulescu Robert Cristian</li>
+            </ul>
+          </div>
+     
+
+    </section> 
+
+    <div class="footer">
+        <a href="index.html" class="hero-btn">Tea House</a>
+
+    </div>
+ 
+
+  </body>
+
+ 
+</html>
