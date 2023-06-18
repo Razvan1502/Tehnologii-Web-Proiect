@@ -42,13 +42,13 @@ require '../sessions.php';
             $name = $item['name'];
             $price = $item['price'];
 
-            if (isset($item['quantity'])) {
+            if (isset($item['quantity'])) { //verifica dacă produsul are o cantitate specificata
                 $quantity = $item['quantity'];
             } else {
                 $quantity = 1;
             }
 
-            if (!isset($desiredProducts[$name])) {
+            if (!isset($desiredProducts[$name])) { //Se verifica dacă produsul a fost adaugat anterior în array
                 $desiredProducts[$name] = 0;
             }
 
@@ -171,10 +171,10 @@ require '../sessions.php';
             <?php if (!empty($cartItems)) { ?>
                 // functia AJAX
                 var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'submit_order.php', true);
-                xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr.open('POST', 'submit_order.php', true); //Se deschide o conexiune către fișierul "submit_order.php" de pe server folosind metoda HTTP POST.
+                xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); //Se setează antetul "Content-Type" pentru a specifica că datele trimise sunt de tip "application/x-www-form-urlencoded"
                 xhr.onreadystatechange = function() {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
+                    if (xhr.readyState === 4 && xhr.status === 200) { //se verifică dacă readyState este 4 (cerere finalizată) și status este 200 (răspunsul a fost de succes).
                         alert(xhr.responseText);
 
                         window.location.href = 'cart.php';  // redirectam daca s-a efectuat comanda
