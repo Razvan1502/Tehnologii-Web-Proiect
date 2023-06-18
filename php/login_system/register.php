@@ -46,7 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 
-    header("Location: login.php");
+    $success_message = "Account created!";
+    header("Location: login.php?success_message=" . urlencode($success_message));
     exit();
 }
 ?>
