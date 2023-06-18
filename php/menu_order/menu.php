@@ -137,15 +137,15 @@ require 'comanda_din_URL.php';
 
      function addToCart(name, price) {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "add_to_cart.php", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
+        xhr.open("POST", "add_to_cart.php", true); //Se deschide o conexiune către fișierul "add_to_cart.php" de pe server folosind metoda HTTP POST.
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); //Se setează antetul "Content-Type" pentru a specifica că datele trimise sunt de tip "application/x-www-form-urlencoded"
+        xhr.onreadystatechange = function() { //Se definește un handler pentru evenimentul onreadystatechange
+            if (xhr.readyState === 4 && xhr.status === 200) {  //se verifică dacă readyState este 4 (cerere finalizată) și status este 200 (răspunsul a fost de succes).
                 alert(xhr.responseText);
                 updateCartCount();
             }
         };
-        xhr.send("name=" + name + "&price=" + price);
+        xhr.send("name=" + name + "&price=" + price); //Se trimite cererea HTTP folosind metoda send()
     }
 
     function updateCartCount() {
