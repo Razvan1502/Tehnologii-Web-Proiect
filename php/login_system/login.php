@@ -33,7 +33,6 @@ require '../sessions.php';
         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true)
             header("Location: ../index.php");
 
-        // Check if success message exists in the query parameters
         if (isset($_GET['success_message'])) {
             $success_message = $_GET['success_message'];
             echo '<p class="success-message"><strong>' . $success_message . '</strong></p>';
